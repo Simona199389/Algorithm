@@ -1,14 +1,13 @@
-import React from 'react';
+import React from "react";
 
 export default function Footer() {
   return (
-    <footer className='h-[4%] w-[100%] pl-[4%] pr-[2%] bg-black flex items-center justify-between fixed bottom-0'>
-      <div className=' text-white'>
-        <p>&copy; Всички права запазени 2004-2018</p>
-      </div>
-      <div className='w-[23.5%] text-white'>
-        <p>Design and development by <span className='text-customGreen'>for the people creative studio</span></p>
-      </div>
+    <footer className="absolute bottom-0 w-full h-fit md:h-16 bg-black text-white flex flex-col lg:flex-row items-center justify-between px-4 py-1 md:py-0 md:px-12 space-y-1">
+      <p className="text-xs md:text-base">© Всички права запазени 2004-2018</p>
+      <p className="text-xs md:text-base">
+        Design and development by{" "}
+        <span className="text-green-500">for the people creative studio</span>
+      </p>
     </footer>
   );
 }
